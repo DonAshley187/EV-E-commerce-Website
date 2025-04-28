@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# ⚡ EV E-Commerce Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack Electric Vehicle (EV) E-commerce Website where users can
+explore various EV models, compare features, and pre-book vehicles with
+integrated Razorpay payments.\
+Built with React (frontend) and Node.js/Express (backend), with a
+modern, yellow-themed UI design.
 
-## Available Scripts
+## 🛠️ Tech Stack
 
-In the project directory, you can run:
+\- Frontend: React.js, Tailwind CSS\
+- Backend: Node.js, Express.js\
+- Payment Gateway: Razorpay\
+- Database: (Optional: MongoDB/MySQL)\
+- Email Service: Nodemailer\
+- Deployment: (Optional: Vercel, Render, or custom hosting)
 
-### `npm start`
+## 🚗 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   🌟 Homepage with dynamic word effects (Elegance, Minimalism,
+    Comfort).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   🌟 Image carousel showcasing EV models.
 
-### `npm test`
+-   🌟 Product Comparison to help users compare different EV models
+    side-by-side.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   🌟 Product Details Pages for SE03 Lite, SE03, SE03 Max models.
 
-### `npm run build`
+-   🌟 Pre-booking System with Razorpay payment integration.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   🌟 Email Confirmation after successful booking.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   🌟 Responsive Design for mobile and desktop.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   🌟 Themed UI with dark greys, black, white, and vibrant yellow
+    (#F9ED32, #FFF225).
 
-### `npm run eject`
+## 🚀 How to Run Locally
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1\. Clone the repository
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+git clone https://github.com/yourusername/ev-ecommerce-website.git\
+cd ev-ecommerce-website
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2\. Start backend server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+cd BTS\
+node server.js
 
-## Learn More
+3\. Setup Frontend:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+cd frontend\
+npm install\
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The frontend will run on http://localhost:3000
 
-### Code Splitting
+The backend will run on http://localhost:5000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 💳 Razorpay Payment Flow
 
-### Analyzing the Bundle Size
+1\. User selects a model to pre-book.\
+2. Fills out the PreBook form (product name auto-filled).\
+3. Razorpay payment gateway popup appears.\
+4. After successful payment:\
+- Razorpay sends payment info to backend.\
+- Backend sends email receipt confirmation to the user.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📬 Email Receipt
 
-### Making a Progressive Web App
+\- Nodemailer is used to send a booking confirmation email containing:\
+- Customer name\
+- Vehicle booked\
+- Booking ID\
+- Payment details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## ✨ Future Enhancements (optional ideas)
 
-### Advanced Configuration
+-   🚀 Add User Authentication (JWT tokens).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-   🚀 Order Tracking dashboard.
 
-### Deployment
+-   🚀 Admin panel to manage bookings.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+-   🚀 Full Database Integration (MongoDB/MySQL) for pre-book data
+    persistence.
 
-### `npm run build` fails to minify
+-   🚀 Reviews & Ratings for EV models.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👩‍💻 Author
+
+Ashwin Shinde
+
+## Screenshots:
+
+
+
