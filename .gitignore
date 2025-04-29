@@ -1,5 +1,24 @@
+# === Root level ===
 node_modules/
-BTS/node_modules/
 .env
+build/
+.DS_Store
+npm-debug.log
+yarn-error.log
+
+# === React specific ===
+*.log
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# === VSCode/editor folders ===
+.vscode/
+.idea/
+
+# === Backend specific (BTS/) ===
+BTS/node_modules/
+BTS/.env
 BTS/receipts/
 BTS/path/
