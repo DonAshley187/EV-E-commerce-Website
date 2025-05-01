@@ -92,7 +92,5 @@ The backend will run on http://localhost:5000
 
 Ashwin Shinde
 
-## Screenshots:
-
 
 
