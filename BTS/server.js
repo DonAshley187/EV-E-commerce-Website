@@ -58,7 +58,7 @@ function sendEmail(receiptPath, email) {
 
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "index.html"));
+    res.sendFile(path.join(__dirname, "..", "public", "index.html"));
 });
 
 app.post('/create-order', async (req, res) => {
