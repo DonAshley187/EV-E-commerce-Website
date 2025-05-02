@@ -40,8 +40,8 @@ modern, yellow-themed UI design.
 
 1\. Clone the repository
 
-git clone https://github.com/yourusername/ev-ecommerce-website.git\
-cd ev-ecommerce-website
+git clone https://github.com/DonAshley187/EV-E-commerce-Website.git
+cd EV-E-commerce-Website
 
 2\. Start backend server:
 
