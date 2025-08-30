@@ -8,12 +8,10 @@ modern, yellow-themed UI design.
 
 ## 🛠️ Tech Stack
 
-\- Frontend: React.js, Tailwind CSS\
-- Backend: Node.js, Express.js\
-- Payment Gateway: Razorpay\
-- Database: (Optional: MongoDB/MySQL)\
-- Email Service: Nodemailer\
-- Deployment: (Optional: Vercel, Render, or custom hosting)
+\- Frontend: React.js, Tailwind CSS
+- Backend: Node.js, Express.js
+- Payment Gateway: Razorpay
+- Email Service: Nodemailer
 
 ## 🚗 Features
 
@@ -45,13 +43,12 @@ cd EV-E-commerce-Website
 
 2\. Start backend server:
 
-cd BTS\
+cd BTS
 node server.js
 
 3\. Setup Frontend:
 
-cd frontend\
-npm install\
+npm install
 npm start
 
 The frontend will run on http://localhost:3000
@@ -70,9 +67,9 @@ The backend will run on http://localhost:5000
 ## 📬 Email Receipt
 
 \- Nodemailer is used to send a booking confirmation email containing:\
-- Customer name\
-- Vehicle booked\
-- Booking ID\
+- Customer name
+- Vehicle booked
+- Booking ID
 - Payment details
 
 ## ✨ Future Enhancements (optional ideas)
