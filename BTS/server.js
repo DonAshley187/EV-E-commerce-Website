@@ -12,8 +12,8 @@ app.use(cors());
 
 // Replace these with your Razorpay key_id and key_secret
 const razorpay = new Razorpay({
-    key_id: 'rzp_test_bFDZkJrz0HoShn',
-    key_secret: 'Fymnt5H0XFn93HgjFoUehF2p'
+    key_id: process.env.RAZORPAY_KEY_ID,
+    key_secret: process.env.RAZORPAY_SECRET_KEY
 });
 
 app.use(bodyParser.json());
@@ -109,3 +109,4 @@ app.post('/capture-payment', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+
