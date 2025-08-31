@@ -46,7 +46,6 @@ function PreBookForm() {
     
         try {
             const amount = productPrices[formData.ev]; // Amount in paise
-            console.log("Break 1")
             const orderResponse = await fetch('http://localhost:5000/create-order', {
                 method: 'POST',
                 headers: {
@@ -59,17 +58,15 @@ function PreBookForm() {
                     payment_capture: 1
                 })
             });
-            console.log("Break2");
     
             if (!orderResponse.ok) {
                 throw new Error('Failed to create order');
             }
-            console.log("Break3");
     
             const orderData = await orderResponse.json();
             console.log("Break4");
             const options = {
-                key: 'rzp_test_bFDZkJrz0HoShn',
+                key: process.env.RAZORPAY_SECRET_KEY,
                 amount: orderData.amount,
                 currency: orderData.currency,
                 name: "EV E-Commerce",
@@ -171,3 +168,4 @@ function PreBookForm() {
 }
 
 export default PreBookForm;
+
