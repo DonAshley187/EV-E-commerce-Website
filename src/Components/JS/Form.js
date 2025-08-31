@@ -66,7 +66,7 @@ function PreBookForm() {
             const orderData = await orderResponse.json();
             console.log("Break4");
             const options = {
-                key: process.env.RAZORPAY_SECRET_KEY,
+                key: process.env.RAZORPAY_KEY_ID,
                 amount: orderData.amount,
                 currency: orderData.currency,
                 name: "EV E-Commerce",
@@ -168,4 +168,5 @@ function PreBookForm() {
 }
 
 export default PreBookForm;
+
 
